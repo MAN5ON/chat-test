@@ -1,0 +1,160 @@
+.chatOpen {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.header {
+	display: flex;
+	height: 64px;
+	align-items: center;
+	z-index: 100;
+	padding-left: 18px;
+
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+	box-shadow: inset 0px -1px 0px rgba(32, 31, 30, 0.12);
+}
+
+.header span {
+	margin: 10px;
+}
+
+.messageHistory {
+	display: flex;
+	flex-direction: column;
+	max-height: 74vh;
+	box-sizing: border-box;
+	overflow: auto;
+}
+
+.messageItem,
+.myMessageItem,
+.systemMessage,
+.messageItem .messageBody,
+.myMessageItem .messageBody {
+	border-radius: 4px;
+	padding: 8px 12px;
+	gap: 12px;
+}
+
+.messageItem,
+.myMessageItem {
+	display: inherit;
+	max-width: 60%;
+}
+
+.myMessageItem {
+	justify-content: flex-end;
+	align-self: flex-end;
+}
+
+.messageItem .messageBody {
+	background-color: rgba(243, 243, 243, 1);
+}
+
+.myMessageItem .messageBody {
+	background-color: rgba(64, 126, 201, 0.16);
+}
+
+.messageText {
+	font-size: 15px;
+	line-height: 20px;
+}
+.timeCheck {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 5px;
+	font-size: 12px;
+	line-height: 9px;
+	color: rgba(96, 94, 92, 1);
+}
+
+.systemMessage {
+	margin-top: 10px;
+	display: inherit;
+	align-self: center;
+	background-color: rgba(64, 126, 201, 0.08);
+}
+
+.newMessage {
+	display: inherit;
+	align-items: center;
+	justify-content: center;
+	height: 24px;
+	margin-top: 10px;
+	font-size: 12px;
+	line-height: 16px;
+	color: #407ec9;
+	background-color: rgba(64, 126, 201, 0.08);
+}
+
+.inputForm {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	bottom: 0;
+	width: 100%;
+	max-height: 25vh;
+	padding: 24px 16px;
+	background-color: white;
+	box-sizing: border-box;
+}
+
+.inputForm textarea {
+	width: 100%;
+	height: 40px;
+	padding: 10px 16px;
+	border-radius: 4px;
+	border: 1px solid #a19f9d;
+	resize: none;
+	outline: none;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	font-family: "Lato", sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	overflow: hidden;
+}
+
+.inputButtons {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.inputButtons button {
+	display: inherit;
+	align-items: center;
+	justify-content: center;
+
+	margin-top: 5px;
+	width: 32px;
+	height: 32px;
+
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+}
+
+.addFile {
+	background-color: rgba(32, 31, 30, 0.04);
+}
+
+.addFile:active {
+	background-color: rgba(32, 31, 30, 0.12);
+}
+
+.send {
+	background: none;
+}

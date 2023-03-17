@@ -1,0 +1,88 @@
+.chatList {
+	z-index: 100;
+	width: 360px;
+	min-width: 360px;
+	min-height: 100vh;
+	max-height: 100vh;
+	box-sizing: border-box;
+	overflow: auto;
+	overflow-x: hidden;
+	box-shadow: inset -1px 0px 0px rgba(32, 31, 30, 0.12);
+}
+
+.header {
+	display: flex;
+	height: 64px;
+	align-items: center;
+
+	padding-left: 16px;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.chatItem {
+	display: flex;
+	height: 72px;
+	width: 360px;
+
+	flex-direction: row;
+	align-items: center;
+
+	cursor: pointer;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.currentChatItem {
+	display: flex;
+	height: 72px;
+	width: 360px;
+
+	flex-direction: row;
+	align-items: center;
+
+	cursor: pointer;
+	font-size: 15px;
+	line-height: 20px;
+	
+	background-color: rgba(64, 126, 201, 0.16);
+}
+
+.chatItem:hover {
+	background-color: rgba(64, 126, 201, 0.10);
+}
+
+.chatItem img {
+	border-radius: 4px;
+	margin: 0px 16px;
+}
+
+.currentChatItem img {
+	border-radius: 8px;
+	margin: 0px 8px;
+}
+
+.textBlock {
+	margin-left: 32px;
+}
+.itemTitle {
+	font-weight: 700;
+	color: #201f1e;
+
+	width: 200px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.itemText {
+	font-weight: 400;
+	color: #605e5c;
+
+	width: 260px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
